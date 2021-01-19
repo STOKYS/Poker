@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/default.css">
+</head>
+
+<body>
+    <main>
+        <div class="game">
+            <canvas id="canvas" height="800" width="1200"></canvas>
+        </div>
+        <div class="info">
+            <div class="section">
+                <h1>Poker</h1>
+            </div>
+            <div class="section">
+                <div class="options">
+                    <button type="button" id="call">Call</button>
+                    <label>Bet:</label>
+                    <input type="number" id="bet" value="0" min="0" max="100">
+                    <button type="button" id="check">Check</button>
+                    <button type="button" id="fold">Fold</button>
+                </div>
+                <div class="options">
+                    <button type="button" id="newGame">NEW GAME</button>
+                    <label>Starting money</label>
+                    <input type="number" id="moneyStart" value="100" min="20" max="1000">
+                </div>
+
+            </div>
+            <div class="section">
+                <div class="game_info">
+                    <h5>Game</h5>
+                    <p id="game_pot">Pot: $0</p>
+                    <p id="game_call">Call: $0</p>
+                </div>
+                <div class="player_info">
+                    <h5>Player</h5>
+                    <p id="player0_money">Money: $100</p>
+                </div>
+                <div class="player_info">
+                    <h5>AI Top</h5>
+                    <p id="player1_money">Money: $100</p>
+                </div>
+                <div class="player_info">
+                    <h5>AI Left</h5>
+                    <p id="player2_money">Money: $100</p>
+                </div>
+                <div class="player_info">
+                    <h5>AI Right</h5>
+                    <p id="player3_money">Money: $100</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <button id="fgfdasf">Turn</button>
+    <script src="js/class.js"></script>
+    <script src="js/setup.js"></script>
+    <script src="js/game.js"></script>
+</body>
+
+</html>

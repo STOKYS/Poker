@@ -1,0 +1,62 @@
+* {
+    padding:0;
+    margin:0;
+    color: rgb(200, 200, 200);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 200
+}
+
+body {
+    background-color: rgb(5, 15, 30);
+}
+
+canvas {
+    border: 1px solid black;
+}
+
+.game {
+    float: left;
+    width: 1200px;
+}
+
+.info {
+    float: right;
+    width: 700px;
+    height: 800px;
+}
+
+.section {
+    height: 33%;
+    border: 1px solid white
+}
+
+.game_info {
+    width: 99.85%;
+    height: 33%;
+}
+
+.player_info {
+    display: table;
+    float: left;
+    width: 49.832%;
+    height: 33%;
+}
+
+.options{
+    display: table;
+    float: left;
+    width: 49.83%;
+    height: 100%;
+}
+
+.options > * {
+    width: 99.8%;
+    font-size: 20px;
+}
+
+.options > button {
+    background-color: rgba(10,20,50,.5);
+    height: 40px;
+    height: 25%;
+    font-size: 24px;
+}
